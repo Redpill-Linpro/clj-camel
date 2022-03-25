@@ -1,12 +1,12 @@
-(def camel-version "3.13.0")
+(def camel-version "3.15.0")
 
-(defproject takeoff/clj-camel "2.1.0"
-  :description "Clojure wrapper for Apache Camel"
-  :url "https://github.com/TakeoffTech/clj-camel"
+(defproject redpill-linpro/clj-camel "2.1.0"
+  :description "Clojure wrapper for Apache Camel, a fork of takeoff/clj-camel"
+  :url "https://github.com/Redpill-Linpro/clj-camel"
   :license {:name "Apache License Version 2.0"
             :url  "https://www.apache.org/licenses/LICENSE-2.0.txt"}
-  :dependencies [[org.clojure/clojure "1.10.1"]
-                 [org.clojure/tools.logging "1.0.0"]
+  :dependencies [[org.clojure/clojure "1.11.0"]
+                 [org.clojure/tools.logging "1.2.4"]
 
                  [org.apache.camel/camel-core       ~camel-version]
                  [org.apache.camel/camel-sql        ~camel-version]
@@ -15,8 +15,8 @@
                  [org.apache.camel/camel-ftp        ~camel-version]
                  [malabarba/lazy-map "1.3"]
 
-                 [camel-snake-kebab "0.4.1"]
-                 [metosin/jsonista "0.2.6"]
+                 [camel-snake-kebab "0.4.2"]
+                 [metosin/jsonista "0.3.5"]
                  [clj-time "0.15.2"]]
   :target-path "target/%s"
 
